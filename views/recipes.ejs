@@ -1,0 +1,30 @@
+<%- include("header")-%>
+
+  <div class="flex-container">
+    <%Recipes.forEach(function(recipe){%>
+<form  class="flex-container" action="savedrecipes" method="post">
+
+  <div class="flex-item card" style="width: 25rem;">
+
+    <h1 class="foodtitle cardtext card-title" name="namelabel"><%=recipe.foodTitle%></h1>
+    <input  name="recipename" value="<%=recipe.foodTitle%>"></input>
+    <h4 class="cardtext" name="foodcalories"><%=recipe.recipeCalories%> <%=recipe.caloriesunit%></h4>
+        <input type="hidden" name="recipecalories" value="<%=recipe.recipeCalories%> <%=recipe.caloriesunit%>"></input>
+      <img class="card-image" name="foodimage" src="<%=recipe.foodimage%>" class="card-img-top" alt="">
+        <input type="hidden" name="recipeimage" value="<%=recipe.foodimage%>"></input>
+    <div class="card-body">
+
+      <a class="cardlink" name="foodlink" href="<%=recipe.recipelink%>">Get Recipe</a>
+    </div>
+
+    <div class=" item card-footer">
+  <input type="checkbox" onChange="this.form.submit()" name="checkeditem" value="<%=recipe.recipelink%>">
+  <p>save recipe</p>
+</div>
+  </div>
+
+<%})%>
+</form>
+</div>
+
+<%- include("footer")-%>

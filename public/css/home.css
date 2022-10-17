@@ -1,0 +1,23 @@
+html,body{
+
+background-image: linear-gradient(0.59turn,#C7D36F,#FCF9C6,#9EB23B);
+text-align: center;
+min-height: 1000px;
+}
+#heading{
+  font-family: 'DynaPuff','cursive';
+  font-weight: 700;
+  font-size: 150px;
+  padding: 5px;
+  color: white;
+  margin-top: 100px;
+}
+#arrows{
+  color: white;
+  background-image: linear-gradient(0.59turn,#9EB23B,#9EB23B,#FCF9C6);
+  width: 20%;
+  height: 40%;
+}
+/* #FCF9C6
+#C7D36F
+#9EB23B */

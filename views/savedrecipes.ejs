@@ -1,0 +1,15 @@
+<%- include("header")-%>
+<div class="flex-container">
+    <%Recipelink.forEach(function(recipes){%>
+  <div class="flex-item card">
+    <div class="card-body">
+
+        <a class="cardlink" href="<%=recipes.link%>">g </a>
+
+    </div>
+
+  </div>
+
+  <%})%>
+</div>
+<%- include("footer")-%>

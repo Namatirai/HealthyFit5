@@ -1,0 +1,22 @@
+<%- include("header")-%>
+<div class="flex-container">
+
+      <%Meals.forEach(function(meal){%>
+      <div class="flex-item card" style="width: 25rem;">
+        <h5 class=" cardtext card-title"><%=meal.mealTitle%></h5>
+
+          <img class="card-image" src="<%=meal.mealimage%>" class="card-img-top" alt="">
+        <div class="card-body">
+
+          <a class="cardlink" href="<%=meal.meallink%>">Get Recipe</a>
+
+        </div>
+      </div>
+
+
+
+
+
+<%})%>
+</div>
+<%- include("footer")-%>
